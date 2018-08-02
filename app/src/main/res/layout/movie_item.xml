@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_layout_film_item"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/img_view_film_item"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        android:src="@mipmap/poster_dummy" />
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title_movie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Judul"
+            android:textColor="@color/colorPrimaryDark"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:id="@+id/txt_desc_movie"
+                android:layout_width="0dp"
+                android:layout_weight="5"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:text="@string/home_detail_movie"
+                android:textStyle="bold"/>
+            <TextView
+                android:textSize="12sp"
+                android:layout_marginTop="2dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:lines="3"
+                android:text="\n\n..."
+                android:textStyle="bold"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="2dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/txt_release_film_item"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:text="@string/release" />
+    </LinearLayout>
+
+
+</LinearLayout>
